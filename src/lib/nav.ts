@@ -1,3 +1,5 @@
+import type { Role } from '#lib/domain';
+
 export const DEMO_PASSWORD = 'demo-pass-1';
 
 export const demoAccounts = [
@@ -9,23 +11,42 @@ export const demoAccounts = [
 	{ email: 'admin@demo.test', label: 'Admin', blurb: 'Accounts and staff roles' }
 ] as const;
 
-export const customerLinks = [
+export type NavLink = { href: string; label: string };
+
+export const customerLinks: NavLink[] = [
 	{ href: '/app', label: 'Packages' },
 	{ href: '/app/address', label: 'Addresses' },
 	{ href: '/app/consolidations', label: 'Consolidations' },
 	{ href: '/app/claims', label: 'Claims' }
 ];
 
-export const warehouseLinks = [
+export const warehouseLinks: NavLink[] = [
 	{ href: '/warehouse', label: 'Inventory' },
 	{ href: '/warehouse/consolidations', label: 'Verify' }
 ];
 
-export const supportLinks = [
+export const supportLinks: NavLink[] = [
 	{ href: '/support', label: 'Claims' },
 	{ href: '/support/abnormal', label: 'Unknown parcels' }
 ];
 
-export const deliveryLinks = [{ href: '/delivery', label: 'Jobs' }];
-export const managementLinks = [{ href: '/manage', label: 'Usage' }];
-export const adminLinks = [{ href: '/admin', label: 'Accounts' }];
+export const deliveryLinks: NavLink[] = [{ href: '/delivery', label: 'Jobs' }];
+export const managementLinks: NavLink[] = [{ href: '/manage', label: 'Usage' }];
+export const adminLinks: NavLink[] = [{ href: '/admin', label: 'Accounts' }];
+
+export function linksForRole(role: Role): NavLink[] {
+	switch (role) {
+		case 'customer':
+			return customerLinks;
+		case 'warehouse':
+			return warehouseLinks;
+		case 'support':
+			return supportLinks;
+		case 'delivery':
+			return deliveryLinks;
+		case 'management':
+			return managementLinks;
+		case 'admin':
+			return adminLinks;
+	}
+}

@@ -5,6 +5,7 @@
 	import ChevronDown from '@lucide/svelte/icons/chevron-down';
 	import ChevronRight from '@lucide/svelte/icons/chevron-right';
 	import LogOut from '@lucide/svelte/icons/log-out';
+	import Settings from '@lucide/svelte/icons/settings';
 	import ThemeToggle from './ThemeToggle.svelte';
 
 	let {
@@ -34,6 +35,12 @@
 			{#if user.memberCode}
 				<p class="mt-1 text-xs">Member {user.memberCode}</p>
 			{/if}
+		</div>
+		<div class="mt-1 border-t border-base-300 pt-1">
+			<a class="btn btn-ghost btn-sm w-full justify-start gap-2" href="/settings">
+				<Settings size={16} />
+				Account settings
+			</a>
 		</div>
 		<div class="mt-1 flex items-center justify-between border-t border-base-300 px-2 pt-1">
 			<span class="text-xs text-base-content/60">Appearance</span>

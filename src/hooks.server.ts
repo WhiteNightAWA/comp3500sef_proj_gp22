@@ -41,6 +41,9 @@ export const handle: Handle = async ({ event, resolve }) => {
 	}
 
 	const path = event.url.pathname;
+	if (path === '/settings' || path.startsWith('/settings/')) {
+		if (!event.locals.user) redirect(303, '/login');
+	}
 	const guard = GUARDS.find((item) => path === item.prefix || path.startsWith(`${item.prefix}/`));
 	if (guard) {
 		if (!event.locals.user) redirect(303, '/login');

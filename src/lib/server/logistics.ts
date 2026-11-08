@@ -259,6 +259,19 @@ export async function findAccount(id: string): Promise<AccountView | null> {
 	};
 }
 
+export async function updateProfile(userId: string, input: { name: string; email: string }): Promise<void> {
+	const nameError = validateText('Name', input.name, 60);
+	if (nameError) throw new RuleError(nameError);
+	const email = input.email.trim().toLowerCase();
+	if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new RuleError('Email is not valid');
+	if (email.length > 120) throw new RuleError('Email must be 120 characters or fewer');
+	const filter = userIdFilter(userId);
+	const taken = await users().findOne({ email, _id: { $ne: filter._id } });
+	if (taken) throw new RuleError('That email is already in use');
+	const result = await users().updateOne(filter, { $set: { name: input.name.trim(), email } });
+	if (result.matchedCount === 0) throw new RuleError('Account not found');
+}
+
 export async function listAccounts(): Promise<AccountView[]> {
 	const docs = await users().find({}, { projection: { name: 1, email: 1, role: 1, disabled: 1, memberCode: 1 } }).sort({ role: 1, email: 1 }).toArray();
 	return docs.map((doc) => ({
