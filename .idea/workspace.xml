@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9b5325e-463c-47dd-a9ce-9f94d3f9d16e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/comp3500sef_proj.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="e9b5325e-463c-47dd-a9ce-9f94d3f9d16e" name="Changes" comment="init: init repo">
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BarChart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/BarChart.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/BrandMark.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/BrandMark.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/DataTable.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/DataTable.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/LineChart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/LineChart.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Shell.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Shell.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/address/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/address/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/consolidations/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/consolidations/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/packages/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/packages/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/delivery/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/delivery/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/manage/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/manage/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/register/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/register/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/support/claims/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/support/claims/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/warehouse/consolidations/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/warehouse/consolidations/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/warehouse/packages/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/warehouse/packages/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/warehouse/register/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/warehouse/register/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WhiteNightAWA/comp3500sef_proj.git",
+    "accountId": "85cde690-3d3e-4782-811d-927b1b7724f8"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1,
   "fromUser": false
@@ -85,11 +103,35 @@
       <option name="presentableId" value="Default" />
       <updated>1783427111160</updated>
       <workItem from="1783427112723" duration="38000" />
-      <workItem from="1794172012608" duration="4980000" />
+      <workItem from="1794172012608" duration="5297000" />
     </task>
+    <task id="LOCAL-00001" summary="init: init repo">
+      <option name="closed" value="true" />
+      <created>1794179402158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1794179402159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init: init repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="init: init repo" />
   </component>
 </project>

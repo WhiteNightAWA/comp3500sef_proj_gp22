@@ -9,7 +9,7 @@
 </script>
 
 <a class="link text-sm" href="/app/consolidations">Back</a>
-<div class="mt-4 rounded-box bg-base-100 p-4 shadow-sm">
+<div class="panel mt-4 p-4">
 	<div class="flex items-center justify-between">
 		<h2 class="text-xl font-semibold capitalize">{row.method} shipment</h2>
 		<StatusBadge status={row.status} />

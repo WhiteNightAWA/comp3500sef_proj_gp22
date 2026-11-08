@@ -49,14 +49,21 @@
 		caption="Recent flow"
 	/>
 </div>
-<div class="mb-6 grid gap-3 sm:grid-cols-3">
-	{#each data.report.chain as row (row.status)}
-		<div class="rounded-box bg-base-100 p-4 shadow-sm">
-			<p class="text-sm capitalize opacity-60">{statusLabel(row.status)}</p>
-			<p class="text-2xl font-semibold">{row.count}</p>
-		</div>
-	{/each}
-</div>
+<details class="panel mb-8 group">
+	<summary class="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 font-medium">
+		Parcel counts by status
+		<span class="text-sm text-base-content/50 group-open:hidden">Show</span>
+		<span class="hidden text-sm text-base-content/50 group-open:inline">Hide</span>
+	</summary>
+	<div class="grid gap-3 border-t border-base-300 p-4 sm:grid-cols-3">
+		{#each data.report.chain as row (row.status)}
+			<div class="rounded border border-base-300 bg-base-200/40 p-4">
+				<p class="text-sm capitalize opacity-60">{statusLabel(row.status)}</p>
+				<p class="text-2xl font-semibold leading-tight">{row.count}</p>
+			</div>
+		{/each}
+	</div>
+</details>
 <DataTable rows={data.report.zones} columns={zoneColumns} placeholder="Filter zones">
 	{#snippet children(zone)}
 		<tr>

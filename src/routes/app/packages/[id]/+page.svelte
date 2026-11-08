@@ -11,7 +11,7 @@
 
 <a class="link text-sm" href="/app">Back to parcels</a>
 <div class="mt-4 grid gap-6 lg:grid-cols-2">
-	<section class="rounded-box bg-base-100 p-4 shadow-sm">
+	<section class="panel p-4">
 		<div class="flex items-start justify-between gap-3">
 			<div>
 				<h2 class="text-xl font-semibold">{pkg.trackingNumber}</h2>
@@ -32,7 +32,7 @@
 			<button class="btn btn-sm">Refresh tracking</button>
 		</form>
 	</section>
-	<section class="rounded-box bg-base-100 p-4 shadow-sm">
+	<section class="panel p-4">
 		<h2 class="mb-3 font-semibold">Tracking</h2>
 		<Timeline events={pkg.events} />
 	</section>

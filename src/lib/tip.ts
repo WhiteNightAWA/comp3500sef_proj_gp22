@@ -6,7 +6,7 @@ export function tip(node: HTMLElement, text: string) {
 		if (!bubble) {
 			bubble = document.createElement('div');
 			bubble.className =
-				'pointer-events-none fixed z-[90] -translate-x-1/2 -translate-y-full rounded bg-neutral px-2 py-1 text-xs text-neutral-content shadow';
+				'pointer-events-none fixed z-[90] -translate-x-1/2 -translate-y-full rounded bg-neutral px-2 py-1 text-xs text-neutral-content';
 			document.body.appendChild(bubble);
 		}
 		bubble.textContent = text;

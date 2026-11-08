@@ -15,15 +15,15 @@
 <svelte:head><title>Sign in · Logistics</title></svelte:head>
 
 <PublicFrame user={data.user}>
-	<div class="mx-auto grid max-w-6xl items-start gap-8 px-4 py-12 lg:grid-cols-[1.1fr_0.9fr]">
+	<div class="display-copy mx-auto grid max-w-6xl items-start gap-10 px-4 pt-14 pb-20 lg:grid-cols-[1.1fr_0.9fr]">
 		<section>
-			<p class="text-sm font-medium uppercase tracking-wide text-primary">Harbour Lane</p>
-			<h1 class="mt-2 text-4xl font-semibold tracking-tight">Sign in to your desk</h1>
+			<p class="text-sm font-medium uppercase tracking-[0.14em] text-primary">Harbour Lane</p>
+			<h1 class="mt-3">Sign in to your desk</h1>
 			<p class="mt-3 max-w-xl text-base-content/70">Each role opens its own workspace.</p>
 		</section>
 		<div class="space-y-4">
-			<form method="POST" class="rounded-box border border-base-300 bg-base-100 p-5 shadow-sm">
-				<h2 class="text-lg font-semibold">Email and password</h2>
+			<form method="POST" class="panel p-5">
+				<h2 class="text-lg">Email and password</h2>
 				<div class="mt-4 space-y-3">
 					<FormError message={form?.message} />
 					<label class="form-control">
@@ -38,9 +38,13 @@
 					<a class="link text-sm" href="/register">Create a customer account</a>
 				</div>
 			</form>
-			<div class="rounded-box border border-base-300 bg-base-100 p-5 shadow-sm">
-				<h2 class="text-lg font-semibold">Roles</h2>
-				<div class="mt-3 grid gap-2 sm:grid-cols-2">
+			<details class="panel group">
+				<summary class="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-5 py-3 font-medium">
+					Try a demo role
+					<span class="text-sm text-base-content/50 group-open:hidden">Show</span>
+					<span class="hidden text-sm text-base-content/50 group-open:inline">Hide</span>
+				</summary>
+				<div class="grid gap-2 border-t border-base-300 p-4 sm:grid-cols-2">
 					{#each demoAccounts as account (account.email)}
 						<form method="POST">
 							<input type="hidden" name="email" value={account.email} />
@@ -49,7 +53,7 @@
 						</form>
 					{/each}
 				</div>
-			</div>
+			</details>
 		</div>
 	</div>
 </PublicFrame>

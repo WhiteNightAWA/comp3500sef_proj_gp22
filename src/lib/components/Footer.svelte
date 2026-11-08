@@ -7,7 +7,7 @@
 <footer class="mt-auto border-t border-base-300 bg-base-100">
 	<div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2">
 		<div>
-			<p class="font-semibold">Harbour Lane</p>
+			<p class="font-display text-lg">Harbour Lane</p>
 			<p class="mt-2 text-sm text-base-content/70">
 				Parcel consolidation for inbound storage, one outbound shipment, and proof of delivery.
 			</p>

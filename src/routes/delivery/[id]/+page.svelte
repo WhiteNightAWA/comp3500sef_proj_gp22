@@ -10,7 +10,7 @@
 </script>
 
 <a class="link text-sm" href="/delivery">Back</a>
-<article class="mt-4 rounded-box bg-base-100 p-4 shadow-sm">
+<article class="panel mt-4 p-4">
 	<div class="flex items-center justify-between">
 		<h2 class="text-xl font-semibold">Member {job.memberCode ?? '—'}</h2>
 		<StatusBadge status={job.status} />

@@ -78,9 +78,9 @@
 			</aside>
 		{/if}
 		<div class="min-w-0 flex-1">
-		<main class="harbour-wash page-main mx-auto w-full max-w-6xl px-4 py-6">
-			<div class="mb-4 flex flex-wrap items-end justify-between gap-3">
-				<h1 class="text-2xl font-semibold tracking-tight">{title}</h1>
+		<main class="harbour-wash page-main mx-auto w-full max-w-6xl px-4 py-8 md:py-10">
+			<div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+				<h1 class="text-2xl font-semibold tracking-tight md:text-3xl">{title}</h1>
 			</div>
 			{@render children()}
 		</main>

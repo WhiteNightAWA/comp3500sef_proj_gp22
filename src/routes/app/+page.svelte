@@ -43,7 +43,7 @@
 	<div class="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
 		{#each statusCounts as row (row.label)}
 			<button
-				class="rounded-box border bg-base-100 p-4 text-left shadow-sm {query === row.label ? 'border-primary' : 'border-base-300'}"
+				class="panel p-4 text-left {query === row.label ? '!border-primary' : ''}"
 				type="button"
 				onclick={() => (query = query === row.label ? '' : row.label)}
 			>

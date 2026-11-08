@@ -67,7 +67,7 @@
 	}
 </script>
 
-<div class="data-grid rounded-box border border-base-300 bg-base-100 shadow-sm">
+<div class="data-grid panel">
 	<div class="flex flex-wrap items-center justify-between gap-2 border-b border-base-300 p-3">
 		<input
 			class="input input-bordered input-sm w-full max-w-xs"

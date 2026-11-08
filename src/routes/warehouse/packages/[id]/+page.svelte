@@ -23,7 +23,7 @@
 
 <div class="mt-4 grid gap-4 lg:grid-cols-2">
 	{#if pkg.status === 'arrived' || pkg.status === 'measured'}
-		<form method="POST" action="?/measure" class="rounded-box bg-base-100 p-4 shadow-sm">
+		<form method="POST" action="?/measure" class="panel p-4">
 			<h3 class="font-semibold">Weigh and measure</h3>
 			<div class="mt-3 grid grid-cols-2 gap-2">
 				<label class="form-control"><span class="label-text">Weight kg</span><input class="input input-bordered" name="weightKg" type="number" min="0.01" step="0.01" required value={pkg.weightKg ?? ''} /></label>
@@ -36,7 +36,7 @@
 		</form>
 	{/if}
 	{#if pkg.status === 'measured' || pkg.status === 'stored'}
-		<form method="POST" action="?/store" class="rounded-box bg-base-100 p-4 shadow-sm">
+		<form method="POST" action="?/store" class="panel p-4">
 			<h3 class="font-semibold">Shelf in an open zone</h3>
 			<label class="form-control mt-3">
 				<span class="label-text">Zone</span>
@@ -54,12 +54,12 @@
 			<button class="btn btn-primary mt-3">Store package</button>
 		</form>
 	{/if}
-	<form method="POST" action="?/mismatch" class="rounded-box bg-base-100 p-4 shadow-sm">
+	<form method="POST" action="?/mismatch" class="panel p-4">
 		<h3 class="font-semibold">Verify declaration</h3>
 		<textarea class="textarea textarea-bordered mt-3 w-full" name="note" maxlength="200" placeholder="What does not match?"></textarea>
 		<button class="btn mt-3">Flag mismatch</button>
 	</form>
-	<div class="rounded-box bg-base-100 p-4 shadow-sm">
+	<div class="panel p-4">
 		<h3 class="font-semibold">Tracking</h3>
 		<form method="POST" action="?/refresh" class="my-3"><button class="btn btn-sm">Refresh tracking</button></form>
 		{#if pkg.status === 'stored'}

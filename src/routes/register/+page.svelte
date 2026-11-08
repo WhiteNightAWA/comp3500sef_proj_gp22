@@ -9,21 +9,20 @@
 <svelte:head><title>Register · Logistics</title></svelte:head>
 
 <PublicFrame user={data.user}>
-	<div class="mx-auto grid max-w-5xl items-start gap-8 px-4 py-12 lg:grid-cols-2">
+	<div class="display-copy mx-auto grid max-w-5xl items-start gap-10 px-4 pt-14 pb-20 lg:grid-cols-2">
 		<section>
-			<p class="text-sm font-medium uppercase tracking-wide text-primary">New customer</p>
-			<h1 class="mt-2 text-4xl font-semibold tracking-tight">Create an account</h1>
+			<p class="text-sm font-medium uppercase tracking-[0.14em] text-primary">New customer</p>
+			<h1 class="mt-3">Create an account</h1>
 			<p class="mt-3 text-base-content/70">
-				Public registration creates a customer. You receive a member code to print on inbound parcels. Staff
-				accounts are created by an administrator.
+				Public signup creates a customer with a member code for inbound parcels; staff accounts are added by an administrator.
 			</p>
-			<ul class="mt-6 space-y-2 text-sm">
-				<li class="rounded-box bg-base-100 px-4 py-3">Pre-register tracking numbers before the box arrives.</li>
-				<li class="rounded-box bg-base-100 px-4 py-3">Confirm a shipping address, then pay one consolidation.</li>
-				<li class="rounded-box bg-base-100 px-4 py-3">Follow status changes and claim updates in Notices.</li>
+			<ul class="mt-8 space-y-3 text-sm">
+				<li class="panel px-4 py-3">Pre-register tracking numbers before the box arrives.</li>
+				<li class="panel px-4 py-3">Confirm a shipping address, then pay one consolidation.</li>
+				<li class="panel px-4 py-3">Follow status changes and claim updates in Notices.</li>
 			</ul>
 		</section>
-		<form method="POST" class="rounded-box border border-base-300 bg-base-100 p-5 shadow-sm">
+		<form method="POST" class="panel p-5">
 			<div class="space-y-3">
 				<FormError message={form?.message} />
 				<label class="form-control">

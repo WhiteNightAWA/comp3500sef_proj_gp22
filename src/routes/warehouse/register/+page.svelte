@@ -7,7 +7,7 @@
 	const arrivalDefault = new Date().toISOString().slice(0, 16);
 </script>
 
-<form method="POST" class="grid max-w-2xl gap-3 rounded-box bg-base-100 p-4 shadow-sm md:grid-cols-2">
+<form method="POST" class="panel grid max-w-2xl gap-3 p-4 md:grid-cols-2">
 	<div class="md:col-span-2"><FormError message={form?.message} /></div>
 	<label class="form-control">
 		<span class="label-text">Item id / tracking number</span>

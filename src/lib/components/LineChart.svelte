@@ -80,7 +80,7 @@
 	});
 </script>
 
-<figure class="rounded-box border border-base-300 bg-base-100 p-4 shadow-sm">
+<figure class="panel p-4">
 	<figcaption class="mb-3 text-sm font-medium">{caption}</figcaption>
 	<div class="h-56">
 		<canvas bind:this={canvas}></canvas>

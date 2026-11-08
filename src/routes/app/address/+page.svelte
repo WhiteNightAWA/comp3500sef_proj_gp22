@@ -57,7 +57,7 @@
 
 <div class="mb-8 grid gap-3">
 	{#each data.addresses as address (address.id)}
-		<article class="rounded-box border border-base-300 bg-base-100 p-4 shadow-sm">
+		<article class="panel p-4">
 			<div class="flex flex-wrap items-start justify-between gap-3">
 				<div>
 					<p class="flex items-center gap-2 font-medium">
