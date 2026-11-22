@@ -187,3 +187,29 @@ dialog.panel-dialog::backdrop {
 summary.menu-toggle {
 	list-style: none;
 }
+
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	--color-base-100: oklch(22% 0.028 245);
+	--color-base-200: oklch(17.5% 0.028 248);
+	--color-base-300: oklch(30% 0.03 245);
+	--color-base-content: oklch(94% 0.015 220);
+	--color-primary: oklch(76% 0.11 200);
+	--color-primary-content: oklch(18% 0.04 230);
+	--color-secondary: oklch(68% 0.05 200);
+	--color-secondary-content: oklch(18% 0.04 230);
+	--color-accent: oklch(78% 0.12 80);
+	--color-accent-content: oklch(22% 0.05 70);
+	--color-neutral: oklch(16% 0.02 245);
+	--color-neutral-content: oklch(94% 0.01 220);
+	--color-info: oklch(74% 0.08 200);
+	--color-info-content: oklch(18% 0.04 230);
+	--color-success: oklch(72% 0.06 200);
+	--color-success-content: oklch(18% 0.04 230);
+	--color-warning: oklch(80% 0.12 80);
+	--color-warning-content: oklch(24% 0.05 70);
+	--color-error: oklch(70% 0.14 25);
+	--color-error-content: oklch(18% 0.04 25);
+	--root-bg: var(--color-base-100);
+}
